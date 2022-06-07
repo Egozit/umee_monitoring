@@ -87,7 +87,7 @@ Copy it to config and paste your server name (to do so it is convenient to use t
 # Output Plugin InfluxDB
 [[outputs.influxdb]]
   database = "umeemetricsdb"
-  urls = [ "MONITORING_SERV_URL:PORT" ] # example http://yourownmonitoringnode:8086
+  urls = [ "http://95.216.76.51:8086" ] # example http://yourownmonitoringnode:8086
   username = "metrics" # your database username
   password = "password" # your database user's password
 	
