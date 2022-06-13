@@ -101,9 +101,9 @@ Dashboard has main cosmos-based node information and common system metrics. Ther
 Go to our comunity dashboard and select you node from the server list: [Dashboard link](http://95.216.76.51:3000/d/C0q3X5P7k/umee-mainnet-monitoring?orgId=1&refresh=30s&var-datasource=InfluxDB&var-inter=2m&var-server=Egozit)
 
 
-![Screenshot_1](https://user-images.githubusercontent.com/43213686/169405751-8ff53124-e128-4078-8d68-229a18ea4e25.png)
-![Screenshot_2](https://user-images.githubusercontent.com/43213686/169405777-eb9965a5-9fe8-4ecf-944b-4482c41c019b.png)
-
+![Screenshot_1](https://github.com/Egozit/monitoring-screenshots/blob/main/umee1.png)
+![Screenshot_2](https://github.com/Egozit/monitoring-screenshots/blob/main/umee2.png)
+![Screenshot_3](https://github.com/Egozit/monitoring-screenshots/blob/main/umee3.png)
 
 
 ### Mon health
