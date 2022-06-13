@@ -81,13 +81,13 @@ Set you name to identify yourself in grafana dashboard and check correctness of 
 ...
 ...
 [[inputs.exec]]
-  commands = ["sudo su -c /root/umee_monitoring/monitor.sh -s /bin/bash root"] # change home and username to the useraccount your validator runs at
+  commands = ["sudo su -c /root/umee_monitoring/monitor.sh -s /bin/bash root"] # change path to your monitor.sh file and username to the one that validator runs at (e.g. root)
   interval = "15s"
   timeout = "5s"
   data_format = "influx"
   data_type = "integer"
 [[inputs.exec]]
-  commands = ["sudo su -c /root/umee_monitoring/monitor_bal.sh -s /bin/bash root"] 
+  commands = ["sudo su -c /root/umee_monitoring/monitor_bal.sh -s /bin/bash root"] # change path to your monitor_bal.sh file and username to the one that validator runs at (e.g. root)
   interval = "15s"
   timeout = "5s"
   data_format = "influx"
