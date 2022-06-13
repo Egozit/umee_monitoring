@@ -1,6 +1,19 @@
-### Installation on a node
+# Umee node monitoring tool
 
-#### Manual installation
+To monitor you node your should install and configure:
+* [InfluxDB](https://www.influxdata.com/products/influxdb/)
+* [Grafana](https://grafana.com/)
+
+Advantages  of using our free service:
+* Our monitoring service is working on dedicated server (24/7 online)
+* No need to install database  (InfluxDB)
+* No need to install and configure  Grafana Dashboard
+* On Grafana dashboard you will find all necessary metrics of your node (we use this monitoring service by ourselves, so we've configured dashboard properly)
+
+## Community dashboard
+Check out our free community dashboard: [Dashboard link](http://95.216.76.51:3000/d/C0q3X5P7k/umee-mainnet-monitoring?orgId=1&refresh=30s&var-datasource=InfluxDB&var-inter=2m&var-server=Egozit)
+
+## Manual installation of telegraf and monitoring script
 
 Install telegraf
 ```
