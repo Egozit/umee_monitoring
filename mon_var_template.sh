@@ -9,6 +9,6 @@ NODE_RPC="http://localhost:${COS_PORT_RPC}"
 NODE_API="http://localhost:${COS_PORT_API}"
 COS_VALOPER=     # validator address, example: umeevaloper1234545636767376535673
 COS_WALADDR=     # validator wallet address, example: umee123454563676***376535673
-COS_BR_ADDR=     # Peggo bridge address, example: umee123454563676***376535673
+COS_BR_ADDR=     # Peggo bridge address (orchestrator), example: umee123454563676***376535673
 ETH_BR_ADDR=     # Peggo bridge etherium wallet address, example 0x12345**890ABCD
 ETH_NODE_RPC=    # Path to your etherium node RPC, example http://localhost:8545 or http://12.34.56.78:8545
