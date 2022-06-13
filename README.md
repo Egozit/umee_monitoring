@@ -68,41 +68,18 @@ chmod +x monitor.sh variables.sh monitor_bal.sh
 Edit telegraf configuration
 ```
 sudo mv /etc/telegraf/telegraf.conf /etc/telegraf/telegraf.conf.orig
+sudo mv telegraf.conf /etc/telegraf/telegraf.conf
 sudo nano /etc/telegraf/telegraf.conf
 ```
-Copy it to config and paste your server name (to do so it is convenient to use the node moniker):
+Set you name to identify yourself in grafana dashboard and check correctness of the path to your monitor.sh and monitor_bal.sh files and username your validator runs at. Correct these two settings in the configuration file:
 ```
 [agent]
   hostname = "YOUR_MONIKER/SERVER_NAME" # set this to a name you want to identify your node in the grafana dashboard
   flush_interval = "15s"
   interval = "15s"
-# Input Plugins
-[[inputs.cpu]]
-  percpu = true
-  totalcpu = true
-  collect_cpu_time = false
-  report_active = false
-[[inputs.disk]]
-  ignore_fs = ["devtmpfs", "devfs"]
-[[inputs.io]]
-[[inputs.mem]]
-[[inputs.net]]
-[[inputs.nstat]]
-[[inputs.system]]
-[[inputs.swap]]
-[[inputs.netstat]]
-[[inputs.linux_sysctl_fs]]
-[[inputs.processes]]
-[[inputs.interrupts]]
-[[inputs.kernel]]
-[[inputs.diskio]]
-# Output Plugin InfluxDB
-[[outputs.influxdb]]
-  database = "umeemetricsdb"
-  urls = [ "http://95.216.76.51:8086" ] # example http://yourownmonitoringnode:8086
-  username = "metrics" # your database username
-  password = "password" # your database user's password
-	
+...
+...
+...
 [[inputs.exec]]
   commands = ["sudo su -c /root/umee_monitoring/monitor.sh -s /bin/bash root"] # change home and username to the useraccount your validator runs at
   interval = "15s"
