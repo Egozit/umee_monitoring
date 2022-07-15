@@ -11,7 +11,8 @@ Advantages  of using our free service:
 * On Grafana dashboard you will find all necessary metrics of your node (we use this monitoring service by ourselves, so we've configured dashboard properly)
 
 ## Community dashboard
-Check out our free community dashboard: [Dashboard link](http://95.216.76.51:3000/d/C0q3X5P7k/umee-mainnet-monitoring?orgId=1&refresh=30s&var-datasource=InfluxDB&var-inter=2m&var-server=Egozit)
+Check out our free community dashboard: 
+# [Dashboard link](http://95.216.76.51:3000/d/C0q3X5P7k/umee-mainnet-monitoring?orgId=1&refresh=30s&var-datasource=InfluxDB&var-inter=2m&var-server=Egozit)
 
 ## Manual installation of telegraf and monitoring script
 
@@ -98,7 +99,8 @@ Set you name to identify yourself in grafana dashboard and check correctness of 
 
 Dashboard has main cosmos-based node information and common system metrics. There is a description for each metric.
 
-Go to our comunity dashboard and select you node from the server list: [Dashboard link](http://95.216.76.51:3000/d/C0q3X5P7k/umee-mainnet-monitoring?orgId=1&refresh=30s&var-datasource=InfluxDB&var-inter=2m&var-server=Egozit)
+Go to our comunity dashboard and select you node from the server list: 
+## [Dashboard link](http://95.216.76.51:3000/d/C0q3X5P7k/umee-mainnet-monitoring?orgId=1&refresh=30s&var-datasource=InfluxDB&var-inter=2m&var-server=Egozit)
 
 
 ![Screenshot_1](https://github.com/Egozit/monitoring-screenshots/blob/main/umee1.png)
