@@ -61,7 +61,7 @@ else
 				else 
             eth_height=$(echo "ibase=16; $(echo $(curl -s -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":83}' $ETH_NODE_RPC | jq -r '.result' | cut -c 3-) | tr [:lower:] [:upper:])" | bc)
             if [ -z "${eth_height}" ]; then eth_height=-1; fi
-            valset_cur_nonce=$(curl -s ${NODE_API}/gravity/v1beta/valset/current | jq -r '.valset.nonce')
+            valset_cur_nonce=-1 #$(curl -s ${NODE_API}/gravity/v1beta/valset/current | jq -r '.valset.nonce')
             if [ -z "${valset_cur_nonce}" ]; then valset_cur_nonce=-1; fi
             if [ -z $(curl -s ${NODE_API}/gravity/v1beta/valset/current | jq -r '.valset.members[].ethereum_address'  | grep ${ETH_BR_ADDR}) ]
             then
@@ -69,7 +69,7 @@ else
             else
                 valset_cur_ok=true
             fi
-            grav_eventnonce=$(curl -s ${NODE_API}/gravity/v1beta/oracle/eventnonce/${COS_BR_ADDR} | jq -r '.event_nonce')
+            grav_eventnonce=-1 #$(curl -s ${NODE_API}/gravity/v1beta/oracle/eventnonce/${COS_BR_ADDR} | jq -r '.event_nonce')
             if [ -z "${grav_eventnonce}" ]; then grav_eventnonce=-1; fi
             logentry="$logentry,eth_height=$eth_height,valset_cur_nonce=$valset_cur_nonce,valset_cur_ok=$valset_cur_ok,grav_eventnonce=$grav_eventnonce"
 				    
